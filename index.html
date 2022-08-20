@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .box{
+            margin-top: 25vh;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40vh;
+            padding: 10px;
+            border-radius: 10px;
+            border: 5px solid black;
+            background-color: whitesmoke;
+            text-align: center;
+            justify-content: center;            
+        }
+        #password{
+            background-color: aliceblue;
+            color: black;
+
+        }
+        table{
+                    
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+        th{
+            padding: 20px;
+            }
+        #button:hover {
+            color: white;
+            background-color: black;
+            }
+        @media (min-width: 600px) {
+            #password{
+                height: 50px;
+                width: 400px;
+                border-radius: 10px;
+                border: 2px solid black;
+                font-size: 22px;
+                }
+
+                #password{
+                    font-size: 23px;
+                }
+                
+                
+                #button {
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    margin-top: 20px;
+                    border: 2px solid #7100cf;
+                    width: 155px;
+                    height: 50px;
+                    display: flex;
+                    background-color: #7100cf;
+                    color: rgb(255, 255, 255);
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 5px;  
+                    }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container box">
+        <!-- Content here -->
+        <p class="fs-1">Random Password</p>
+        <input class="btn btn-primary"  type="text" name="" placeholder="Create password" id="password" readonly>
+        <table>
+            <th><div  class="btn btn-primary" id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+            <th><a class="btn btn-primary" id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+         </table>
+    </div>
+    <script src="password.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
